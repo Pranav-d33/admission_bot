@@ -1,5 +1,4 @@
-fastapi
-uvicorn
-sqlalchemy
-pydantic
-    
+fastapi==0.95.1
+uvicorn==0.22.0
+scikit-learn==1.1.2
+pandas==1.4.3
