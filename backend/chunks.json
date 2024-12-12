@@ -14,7 +14,7 @@
     {
         "id": null,
         "metadata": {},
-        "page_content": "Highest Package: \u00e2\u201a\u00b915,00,000 per annum\n        Fee Structure: {'General': {'Civil': '\u00e2\u201a\u00b91,00,000 - \u00e2\u201a\u00b91,20,000', 'Mechanical': '\u00e2\u201a\u00b91,00,000 - \u00e2\u201a\u00b91,20,000', 'Computer Science': '\u00e2\u201a\u00b91,00,000 - \u00e2\u201a\u00b91,20,000', 'Electrical': '\u00e2\u201a\u00b91,00,000 - \u00e2\u201a\u00b91,20,000', 'Electronics': '\u00e2\u201a\u00b91,00,000 - \u00e2\u201a\u00b91,20,000', 'Chemical': '\u00e2\u201a\u00b91,00,000 - \u00e2\u201a\u00b91,20,000'}, 'EWS': '\u00e2\u201a\u00b990,000', 'EBC': '\u00e2\u201a\u00b995,000', 'TFWS': '\u00e2\u201a\u00b950,000', 'OBC': '\u00e2\u201a\u00b995,000', 'SC': '\u00e2\u201a\u00b960,000', 'ST': '\u00e2\u201a\u00b960,000'}\n        REAP Percentile Required: 9%",
+        "page_content": "Highest Package: \u00e2\u201a\u00b915,00,000 per annum\n        Fee Structure: {'General': {'Civil': '\u00e2\u201a\u00b91,00,000 - \u00e2\u201a\u00b91,20,000', 'Mechanical': '\u00e2\u201a\u00b91,00,000 - \u00e2\u201a\u00b91,20,000', 'Computer Science': '\u00e2\u201a\u00b91,00,000 - \u00e2\u201a\u00b91,20,000', 'Electrical': '\u00e2\u201a\u00b91,00,000 - \u00e2\u201a\u00b91,20,000', 'Electronics': '\u00e2\u201a\u00b91,00,000 - \u00e2\u201a\u00b91,20,000', 'Chemical': '\u00e2\u201a\u00b91,00,000 - \u00e2\u201a\u00b91,20,000'}, 'EWS': '\u00e2\u201a\u00b990,000', 'EBC': '\u00e2\u201a\u00b995,000', 'TFWS': '\u00e2\u201a\u00b950,000', 'OBC': '\u00e2\u201a\u00b995,000', 'SC': '\u00e2\u201a\u00b960,000', 'ST': '\u00e2\u201a\u00b960,000'}\n        REAP Percentile Required: 90%",
         "type": "Document"
     },
     {
@@ -38,7 +38,7 @@
     {
         "id": null,
         "metadata": {},
-        "page_content": "Highest Package: \u00e2\u201a\u00b912,00,000 per annum\n        Fee Structure: {'General': {'Civil': '\u00e2\u201a\u00b980,000 - \u00e2\u201a\u00b91,00,000', 'Mechanical': '\u00e2\u201a\u00b980,000 - \u00e2\u201a\u00b91,00,000', 'Electrical': '\u00e2\u201a\u00b980,000 - \u00e2\u201a\u00b91,00,000', 'Computer Science': '\u00e2\u201a\u00b980,000 - \u00e2\u201a\u00b91,00,000', 'Information Technology': '\u00e2\u201a\u00b980,000 - \u00e2\u201a\u00b91,00,000', 'Chemical': '\u00e2\u201a\u00b980,000 - \u00e2\u201a\u00b91,00,000'}, 'EWS': '\u00e2\u201a\u00b985,000', 'EBC': '\u00e2\u201a\u00b990,000', 'TFWS': '\u00e2\u201a\u00b950,000', 'OBC': '\u00e2\u201a\u00b990,000', 'SC': '\u00e2\u201a\u00b955,000', 'ST': '\u00e2\u201a\u00b955,000'}\n        REAP Percentile Required: 8%",
+        "page_content": "Highest Package: \u00e2\u201a\u00b912,00,000 per annum\n        Fee Structure: {'General': {'Civil': '\u00e2\u201a\u00b980,000 - \u00e2\u201a\u00b91,00,000', 'Mechanical': '\u00e2\u201a\u00b980,000 - \u00e2\u201a\u00b91,00,000', 'Electrical': '\u00e2\u201a\u00b980,000 - \u00e2\u201a\u00b91,00,000', 'Computer Science': '\u00e2\u201a\u00b980,000 - \u00e2\u201a\u00b91,00,000', 'Information Technology': '\u00e2\u201a\u00b980,000 - \u00e2\u201a\u00b91,00,000', 'Chemical': '\u00e2\u201a\u00b980,000 - \u00e2\u201a\u00b91,00,000'}, 'EWS': '\u00e2\u201a\u00b985,000', 'EBC': '\u00e2\u201a\u00b990,000', 'TFWS': '\u00e2\u201a\u00b950,000', 'OBC': '\u00e2\u201a\u00b990,000', 'SC': '\u00e2\u201a\u00b955,000', 'ST': '\u00e2\u201a\u00b955,000'}\n        REAP Percentile Required: 80%",
         "type": "Document"
     },
     {
@@ -68,7 +68,7 @@
     {
         "id": null,
         "metadata": {},
-        "page_content": "REAP Percentile Required: 8%",
+        "page_content": "REAP Percentile Required: 85%",
         "type": "Document"
     },
     {
@@ -98,7 +98,7 @@
     {
         "id": null,
         "metadata": {},
-        "page_content": "REAP Percentile Required: 8%",
+        "page_content": "REAP Percentile Required: 80%",
         "type": "Document"
     },
     {
@@ -128,7 +128,7 @@
     {
         "id": null,
         "metadata": {},
-        "page_content": "REAP Percentile Required: 7%",
+        "page_content": "REAP Percentile Required: 75%",
         "type": "Document"
     },
     {

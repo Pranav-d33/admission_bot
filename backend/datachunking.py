@@ -1,32 +1,30 @@
-# data_chunking.py
-
 import json
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 # Load JSON Data
 def load_data(file_path):
     with open(file_path, "r") as file:
-        return json.load(file)["colleges"]
+        return json.load(file).get("colleges", [])
 
 # Prepare data for chunking
 def prepare_data(data):
     documents = []
     for college in data:
         college_text = f"""
-        Name: {college['name']}
-        Location: {college['location']}
-        Type: {college['type']}
-        Affiliation: {college['affiliation']}
-        Established: {college['established']}
-        Courses: {", ".join(college['courses'])}
-        Facilities: {college['facilities']}
-        Hostel Facilities: {college['hostel_facilities']}
-        Mess Facilities: {college['mess_facilities']}
-        Placement Records: {college['placement_records']}
-        Average Package: {college['average_package']}
-        Highest Package: {college['highest_package']}
-        Fee Structure: {college['fee_structure']}
-        REAP Percentile Required: {college['reap_percentile_required']}
+        Name: {college.get('name', 'N/A')}
+        Location: {college.get('location', 'N/A')}
+        Type: {college.get('type', 'N/A')}
+        Affiliation: {college.get('affiliation', 'N/A')}
+        Established: {college.get('established', 'N/A')}
+        Courses: {", ".join(college.get('courses', []))}
+        Facilities: {college.get('facilities', 'N/A')}
+        Hostel Facilities: {college.get('hostel_facilities', 'N/A')}
+        Mess Facilities: {college.get('mess_facilities', 'N/A')}
+        Placement Records: {college.get('placement_records', 'N/A')}
+        Average Package: {college.get('average_package', 'N/A')}
+        Highest Package: {college.get('highest_package', 'N/A')}
+        Fee Structure: {college.get('fee_structure', 'N/A')}
+        REAP Percentile Required: {college.get('reap_percentile_required', 'N/A')}
         """
         documents.append(college_text.strip())
     return documents

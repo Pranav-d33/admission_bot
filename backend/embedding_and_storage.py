@@ -1,22 +1,24 @@
 import json
-import numpy as np
 from sentence_transformers import SentenceTransformer
-from langchain_chroma import Chroma
-from langchain_core.embeddings import Embeddings
-from langchain_core.documents import Document
+from langchain.vectorstores import Chroma
+from langchain.embeddings.base import Embeddings
+from langchain.schema import Document
+
 
 class SentenceTransformerEmbeddings(Embeddings):
     """
     Wrapper class to make SentenceTransformer compatible with LangChain embeddings interface.
     """
+
     def __init__(self, model_name="all-MiniLM-L6-v2"):
         """
         Initialize the embedding model.
         
         :param model_name: Name of the SentenceTransformer model to use
         """
+        super().__init__()
         self.model = SentenceTransformer(model_name)
-    
+
     def embed_documents(self, texts):
         """
         Embed a list of documents.
@@ -25,7 +27,7 @@ class SentenceTransformerEmbeddings(Embeddings):
         :return: List of embeddings
         """
         return self.model.encode(texts, show_progress_bar=False).tolist()
-    
+
     def embed_query(self, text):
         """
         Embed a single query text.
@@ -34,6 +36,7 @@ class SentenceTransformerEmbeddings(Embeddings):
         :return: Embedding for the text
         """
         return self.model.encode(text).tolist()
+
 
 def load_chunks(file_path):
     """
@@ -48,6 +51,7 @@ def load_chunks(file_path):
     except (FileNotFoundError, json.JSONDecodeError) as e:
         print(f"Error loading chunks: {e}")
         return []
+
 
 def embed_and_store_chunks(chunks, db_path="vector_db"):
     """
@@ -72,9 +76,9 @@ def embed_and_store_chunks(chunks, db_path="vector_db"):
     # Convert chunks into LangChain Document objects
     documents = [
         Document(
-            page_content=chunk.get("page_content", ""), 
-            metadata=chunk.get("metadata", {})
-        ) 
+            page_content=chunk.get("page_content", ""),
+            metadata=chunk.get("metadata", {}),
+        )
         for chunk in chunks
     ]
 
@@ -84,14 +88,16 @@ def embed_and_store_chunks(chunks, db_path="vector_db"):
             documents=documents,
             embedding=embeddings,
             persist_directory=db_path,
-            collection_name="college_data"
+            collection_name="college_data",
         )
+        vector_store.persist()
     except Exception as e:
         print(f"Error creating vector store: {e}")
         return None
 
     print(f"Successfully embedded and stored {len(documents)} chunks.")
     return vector_store
+
 
 def main():
     """
@@ -107,6 +113,7 @@ def main():
 
     if vector_store:
         print(f"Chunks embedded and stored successfully in '{vector_db_path}'.")
+
 
 if __name__ == "__main__":
     main()

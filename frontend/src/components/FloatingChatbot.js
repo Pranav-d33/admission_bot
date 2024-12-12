@@ -35,10 +35,10 @@ const FloatingChatbot = () => {
     setInputMessage('');
 
     try {
-      const response = await axios.post('/api/chat', { message: inputMessage });
+      const response = await axios.post('http://localhost:5000/query', { query: inputMessage });
       const botResponse = { 
         id: messages.length + 2, 
-        text: response.data.message, 
+        text: response.data.response, 
         sender: 'bot' 
       };
       setMessages(prevMessages => [...prevMessages, botResponse]);
