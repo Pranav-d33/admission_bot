@@ -1,0 +1,20 @@
+{
+  "institutions": [
+    {
+      "name": "ABC Engineering College",
+      "location": "City A",
+      "courses": [
+        {
+          "name": "Computer Science",
+          "placementStats": "80%",
+          "cutoffs": "90%",
+          "fees": {
+            "hostel": 50000,
+            "mess": 20000,
+            "admission": 100000
+          }
+        }
+      ]
+    }
+  ]
+}
